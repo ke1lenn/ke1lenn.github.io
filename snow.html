@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&family=Kalam:wght@300&family=Patrick+Hand&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			background-color: lightblue;
+		}
+
+		.title{
+			font-family:'Patrick Hand', cursive;
+			font-size: 30px;
+			color:white;
+		}
+		
+
+		.kells{
+			background-image: url(https://emojigraph.org/media/facebook/snowflake_2744-fe0f.png);
+			background-size: 100%;
+			width:200px;
+			height: 200px;
+			display: inline-block;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function makeSandwich () {
+
+			var ok= document.createElement("div");
+			document.body.appendChild(ok);
+			ok.classList.add("kells");
+		}
+
+setInterval(makeSandwich, 50)
+		
+	</script>
+
+	<div id="title">scroll for snow!</div>
+</body>
+</html>

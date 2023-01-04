@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body onload="addEvent()">
+
+<audio src="LinusAndLucy.mp3"></audio>
+
+<style type="text/css">
+	.thanks{
+		width: 100%;
+		height:  100%;
+		background-image: url(https://blog.zoom.us/wp-content/uploads/2019/11/happy-thanksgiving-zoom.jpg);
+	}
+</style>
+<center><h1>Click anywhere!</h1></center>
+
+	<div id="thanks"></div>
+
+
+	<script type="text/javascript">
+		var clicks =0;
+		document.addEventListener("click", function(){
+			clicks=clicks+1
+			console.log(clicks)
+			if (clicks%2 == 1) {document.body.style.backgroundImage= "url(https://blog.zoom.us/wp-content/uploads/2019/11/happy-thanksgiving-zoom.jpg)"
+				}
+
+
+			if (clicks%2 == 0) {document.body.style.backgroundImage=
+				"url(https://64.media.tumblr.com/580758d707a7200748674add7fcefbcb/60a1cdaaa649daa5-b7/s400x600/d209d0124a1f4c9c751e3ac1a212a0a397e4aa7b.gifv)"}
+
+			if (clicks%2 ==1) {song.pause(LinusAndLucy.mp3)}
+
+			if (clicks%2 == 0) {song.play(LinusAndLucy.mp3)}
+				
+
+			})
+			
+	
+	</script>
+
+</body>
+</html>
