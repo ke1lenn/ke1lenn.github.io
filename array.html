@@ -3,22 +3,39 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&family=Kalam:wght@300&family=Patrick+Hand&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+	
 	<title></title>
 	<style type="text/css">
+	
 	body{
 		margin:0px;
 		background-color: #ccb7e5;
 	}
 
+
 	#box{
-		height: 400px;
+		height: 50px;
 		width: 400px;
 		text-align: center;
-		top: 50%;
-		background-color: floralwhite;
+		background-color: #ccb7e5;
 		position: relative;
-		top:200px;
-		border-radius: 50%;
+		top:150px;
+		font-family:'Patrick Hand', cursive;
+		font-size: 30px;
+		color: white;
+
+	}
+
+	h1{
+		font-family:'Patrick Hand', cursive;
+        font-size:50px;
+        color:white;
+        text-align: center;
+        margin: 3px;
 	}
 
 
@@ -26,16 +43,20 @@
 </style>
 </head>
 <body>
-
+<div id=main>
 <center><div id=box></div></center>
+
+<h1>bored? click for ideas!</h1>
+</div>
+
 <script type="text/javascript">
 
 	
-	var activity = ["draw", "paint", "clean your room", "listen to music", "bake something", "take a nap", "take a bath", "play just dance", "read", "watch youtube", "watch a show"]
+	var activity = ["draw", "paint", "clean your room", "listen to music", "bake something", "take a nap", "take a bath", "play just dance", "read", "watch youtube", "watch a show", "catch up on some work", "make more cs1 projects!", "update your journal!"]
 
 	document.addEventListener("click",function(){
 
-	var random = Math.round(Math.random()*10)
+	var random = Math.round(Math.random()*12)
 	console.log(random)
 	box.innerText=activity[random]
 })
