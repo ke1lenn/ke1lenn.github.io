@@ -36,17 +36,6 @@
 		display: inline-block;
 	}
 
-	/*#note{
-		margin-left: 10px;
-		width:350px;
-		height:470px;
-		background-color: floralwhite;
-		border: 5px solid #fb92be;
-		position: relative;
-		display: inline-block;
-
-	}*/
-
 	.box{
 		margin: 40px;
 		width:380px;
@@ -70,8 +59,9 @@
 	}
 
 	#words{
+			margin-top: 100px;
 			font-family: 'Patrick Hand', cursive;
-			font-size: 19px;
+			font-size: 28px;
 			margin: 2px;
 			text-align: center;
 			color: hotpink;
@@ -82,12 +72,15 @@
 		}
 
 	#heart{
-			width: 300px;
-			height:300px;
-			background-image: url(https://cdn.dribbble.com/users/118459/screenshots/1638452/heartgif.gif);
-			background-size: cover;
-			display: inline-block;
-			position: absolute;
+		width:350px;
+		height:470px;
+		background-image: url(dino.jpg);
+		background-size:cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin: 9px;
+		display: inline-block;
+		position: absolute;
 
 
 		
@@ -109,7 +102,9 @@
 <div class=box id=note>
 	<div id=words>
 	Happy Birthday Mom! 
-		Thank you for all that you do, I love you very much. I know you think I can be annoying sometimes, but thank you for putting up with me (and my friends 😋) Love you lots! Happy birthday. 
+		Thank you for all that you do, I love you very much. I know you think I can be annoying sometimes, but thank you for putting up with me (and my friends 😋) Love you lots!!!
+
+		<-click on both of these->
 </div>
 </div>
 
@@ -118,19 +113,36 @@
 </div>
 
 
-
-
-
+<audio id="hbd" src="happybirthday.mp3"></audio>
 
 <script type="text/javascript">
-var counter = -1;
+
+var count = -1;
 	pics.addEventListener("click", function(){
-		counter = counter +1
-		pics.style.backgroundImage = "url(./momma/p"+counter+ ".jpg)"
-		if (counter >= 15){counter = 0}
+		count = count +1
+		pics.style.backgroundImage = "url(./momma/p"+count+ ".jpg)"
+		if (count >= 15){count = 0}
 
 				console.log(pics)
+	})
 
+
+
+var audio = document.getElementById('hbd');
+	let counter = 0
+		heart.addEventListener("click", function(){
+			counter = counter +1;
+
+			console.log(counter)
+				if (counter%2==1){
+					heart.style.backgroundImage = "url(https://i0.wp.com/techwek.com/wp-content/uploads/2022/10/happy-Birthday-gif-5.gif?resize=600%2C800&ssl=1)";
+					audio.play()
+				}
+
+				else if (counter%2==0){
+					heart.style.backgroundImage = "url(dino.jpg)";
+					audio.pause() 
+		}
 
 	})
 
