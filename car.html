@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+		body{
+			background-image: url(https://i.pinimg.com/originals/96/69/32/966932addf40da9dccfacad5d09b15da.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		
+		#buggy{ 
+			width:300px;
+			height:200px;
+			background-image:url(ufo.png);
+			background-repeat: no-repeat;
+			background-size: fit;
+			left:10px;
+			position:absolute;
+
+		}
+	</style>
+</head>
+<body>
+
+	<center><div id="buggy"></div></center>
+	<script type="text/javascript">
+
+		buggy.style.left = "0px";
+
+		 var x = parseInt(buggy.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			console.log(y)
+
+			if (event.keyCode == 39){
+				x = x+10;
+			}
+
+			if (event.keyCode == 37){
+				x = x-10
+			}
+
+
+			
+			//on any pressed key, move forward + 10 px//
+
+			buggy.style.left = x +"px";
+
+
+
+		
+
+		})
+
+
+	</script>
+
+</body>
+</html>

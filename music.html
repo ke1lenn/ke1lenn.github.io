@@ -13,41 +13,55 @@
 			background-size: cover;
 		}
 
-		h1{
+		  h1{
             font-family:'Patrick Hand', cursive;
             font-size:50px;
             color:floralwhite;
-            margin: 2%;
+            margin: 3px;
         }
 
         p{
             font-family:'Patrick Hand', cursive;
             font-size:30px;
             color:floralwhite;
-            margin: 2%;  
+            margin: 5px;  
         }
 
 		#surething{
-			height: 250px;
-			width: 350px;
+			height: 230px;
+			width: 330px;
 			background-size:cover;
 			background-repeat: no-repeat;
 			border: 5px solid white;
-			margin: 2%;
+			margin: 1%;
 			display: inline-block;
 			background-image: url("https://i.ytimg.com/vi/8oD_-3mHQ8Q/maxresdefault.jpg")
 		}
 
-		#alone{
-			height: 250px;
-			width: 350px;
+		#dwfil{
+			height: 230px;
+			width: 330px;
+			background-size:cover;
+			background-position-x: ;
+			background-repeat: no-repeat;
+			border: 5px solid white;
+			margin: 1%;
+			background-color: palevioletred;
+			display: inline-block;
+			background-image: url(kyle!.jpg);
+		}
+
+		#LIOAF{
+			height: 230px;
+			width: 330px;
 			background-size:cover;
 			background-repeat: no-repeat;
 			border: 5px solid white;
-			margin: 2%;
+			margin: 1%;
 			display: inline-block;
-			background-image: url(https://media.afrocharts.com/file/afrocharts-media/uploads/2022/11/maxresdefault-afrocharts-636b7ef30a24d38ec977c13.jpg);
+			background-image: url(https://i.pinimg.com/564x/6f/49/b3/6f49b30f9c86b5927b6f09dfa9d6abcc.jpg);
 		}
+
 
 
 	</style>	
@@ -55,20 +69,23 @@
 </head>
 <body>
 
-<h1>    click the song to hear it!</h1>
+<h1> kellen's favorite songs</h1> 
+
+<p>click the song to hear it!</p>
 
  <div id=surething></div>
- <div id=alone></div>
+ <div id=dwfil></div>
+ <div id=LIOAF></div>
  
 	<audio id="miguel" src="sure-thing.mp3"></audio>
-	<audio id="burna" src="alone.mp3"></audio>
+	<audio id="kyle" src="dont-wanna-fall-in-love.mp3"></audio>
 
 
 
 	<script type="text/javascript">
 	
 
-		var audio = document.getElementById('miguel');
+		var miguel = document.getElementById('miguel');
 
 		let counter = 0
 
@@ -80,12 +97,12 @@
 
 				if (counter%2==1){
 					surething.style.backgroundImage = "url(https://cdn.dribbble.com/users/2832063/screenshots/6357357/record_dribbble.gif)";
-					audio.play()
+					miguel.play()
 				}
 
 				else if (counter%2==0){
 					surething.style.backgroundImage = "url(https://i.ytimg.com/vi/8oD_-3mHQ8Q/maxresdefault.jpg)";
-					audio.pause() 
+					miguel.pause() 
 				}			
 
 
@@ -93,22 +110,21 @@
 
 	})
 
-		var audio = document.getElementById('burna');
+		var audio = document.getElementById('kyle');
 
-
-		alone.addEventListener("click", function(){
+		dwfil.addEventListener("click", function(){
 
 			counter = counter +1;
 
 			console.log(counter)
 
 				if (counter%2==1){
-					alone.style.backgroundImage = "url(https://cdn.dribbble.com/users/2832063/screenshots/6357357/record_dribbble.gif)";
+					dwfil.style.backgroundImage = "url(https://i.pinimg.com/originals/eb/a2/62/eba262ac64f0fd42e8c22a616d81687c.gif)";
 					audio.play()
 				}
 
 				else if (counter%2==0){
-					alone.style.backgroundImage = "url(https://media.afrocharts.com/file/afrocharts-media/uploads/2022/11/maxresdefault-afrocharts-636b7ef30a24d38ec977c13.jpg)";
+					dwfil.style.backgroundImage = "url(kyle!.jpg)";
 					audio.pause() 
 				}
 
