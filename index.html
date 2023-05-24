@@ -9,57 +9,68 @@
 
 	body{
 		margin:0px;
+		background-color:#d0c9ea;
 	}
 	
 	#block{
 		height:100%;
 		width:100%;
-		background-color:#ccb7e5;
+		background-color:#d0c9ea;
 		background-size:cover;
 		background-repeat:no-repeat;
-		position:fixed;
+		position:relative;
 
 	}
 
 	#pagetitle{
+		height: 50px;
+		width: 400px;
+		background-color: white;
+		margin-left: 36%;
+		margin-top: 60px;
 		font-family: 'Patrick Hand', cursive;
 		font-size: 35px;
 		color:#ccb7e5;
+		text-decoration: none;
 		text-align: center;
-		width:98.7%;
-		height:55px;
-		background-color: floralwhite;
-		display: inline-block;
-		margin: 10px;
+	
 	}
 
-		.button1{
+		#button1{
 			display: inline-block;
+			background-image: url(book.png);
 			background-size: 100%;
-			border: 5px solid floralwhite;
-			width: 300px;
-			height: 300px;
-			display: inline-block;
+			background-repeat: no-repeat;
+			width: 330px;
+			height: 360px;
 			margin: 50px;
+			margin-top:10px;
+	
 		}
 
-		.button2{
+		#button2{
 			display: inline-block;
 			background-size: 100%;
-			border: 5px solid floralwhite;
+			background-image: url(me.png);
+		
 			width:300px;
 			height: 300px;
 			margin:50px;
+			margin-top: 10px;
 
 			}
 
-		.button3{
+		#button3{
 			display: inline-block;
-			background-size: 100%;
-			border: 5px solid floralwhite;
-			width:300px;
-			height: 300px;
-			margin:50px;
+			background-position: center;
+			background-size: 120%;
+			background-repeat: no-repeat;
+			background-image: Url(laptop.png);
+				
+			width: 360px;
+			height: 430px;
+			margin: 50px;
+			margin-top:10px;
 
 			}
 
@@ -77,28 +88,27 @@
 
 
 <div id="block">
-<div id="pagetitle">home</div>
+<div id="pagetitle">welcome to my website!</div>
 
 <br>
 <center>
 <a href="journal.html">
-<div class="button1"> 
-		journal
+<div id="button1"> 
 </div>
 
 </a>
+
+<a href="aboutme.html">
+	<div id="button2"> 
+	</div>
+</a>
 	
 <a href="projects.html">
-	<div class="button2"> 
-		projects
+	<div id="button3"> 
 	</div>
 </a>
 
-<a href="aboutme.html">
-	<div class="button2"> 
-		about me
-	</div>
-</a>
+
 </div>
 
 </center>

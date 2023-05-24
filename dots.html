@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	#dot{
+		background-color: blue;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		position: absolute;
+	}
+
+</style>
+
+</head>
+
+<body>
+	<div id=dot></div>
+
+
+<script type="text/javascript">
+	// var size = 0
+	document.addEventListener("mousemove", function(event){
+		console.log(event.clientX, event.clientY)
+		dot.style.left =event.clientX+"px";
+		dot.style.top =event.clientY+"px";
+		
+
+
+	})
+
+
+</script>
+</body>
+</html>
