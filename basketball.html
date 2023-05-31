@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&family=Kalam:wght@300&family=Patrick+Hand&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	body{
+		background-color: #007a33;
+	}
+
+	#words{
+		height: 150px;
+		width: 600px;
+		margin: 30px;
+		margin-left: 405px;
+		font-family: 'Patrick Hand', cursive;
+		font-size: 30px;
+		text-align: center;
+		color: white;
+		background-repeat: no-repeat;
+	}
+
+	#celts{
+		height: 460px;
+		width: 450px;
+		background-image: url(https://cdn.freebiesupply.com/images/large/2x/boston-celtics-logo-transparent.png);
+		background-size: cover;
+		background-position: center;
+		background-color: white;
+		margin-left: 50px;
+		display: inline-block;
+		background-repeat: no-repeat;
+
+	}
+
+
+</style>
+<body>
+	<div id=words> My favorite basketball team is the Boston Celtics ☘️ and I have been playing basketball on and off since I was little</div>
+
+	<div id=celts></div>
+
+<script type="text/javascript">
+
+var count = -1;
+	celts.addEventListener("click", function(){
+		count = count +1
+		celts.style.backgroundImage = "url(./aah/p"+count+ ".jpg)"
+		if (count >= 6){count = 0}
+-
+				console.log(celts)
+	})
+</script>
+</body>
+</html>
