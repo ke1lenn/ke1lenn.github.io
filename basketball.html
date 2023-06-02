@@ -28,11 +28,9 @@
 		background-image: url(https://cdn.freebiesupply.com/images/large/2x/boston-celtics-logo-transparent.png);
 		background-size: cover;
 		background-position: center;
-		background-color: white;
-		margin-left: 50px;
+		margin-left: 33.33%;
 		display: inline-block;
 		background-repeat: no-repeat;
-
 	}
 
 
@@ -42,16 +40,51 @@
 
 	<div id=celts></div>
 
+	<div id=box></div>
+
 <script type="text/javascript">
+	const backgrounds =["p0.jpg", "p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg", "p5.jpg", "p6.jpg"]
 
 var count = -1;
 	celts.addEventListener("click", function(){
 		count = count +1
-		celts.style.backgroundImage = "url(./aah/p"+count+ ".jpg)"
+
+		let background = backgrounds[count]
+		let backgroundUrl=("url("+background+")")
+		
+		console.log(count)
+		celts.style.backgroundImage = backgroundUrl
 		if (count >= 6){count = 0}
--
+
 				console.log(celts)
 	})
+</script>
+<script type="text/javascript">
+			const pics = ["bball0.jpg", "bball1.jpg", "bball2.jpg", "bball3.jpg", "bball4.jpg", "bball5.jpg", "bball6.jpg", "bball7.jpg", "bball8.jpg" ]
+	
+	let counter = 0
+	let heart = document.getElementById("heart")
+
+	
+	function makeDiv(){
+		let background = pics[counter]
+		let backgroundUrl = ("url("+background+")")
+		console.log(backgroundUrl)
+
+		var div = document.createElement("div");
+		div.classList.add("div");
+		document.body.appendChild(div);
+
+		div.style.backgroundImage = backgroundUrl
+
+		counter = counter+1
+		console.log(counter)
+		}
+
+	while(counter<8){
+			makeDiv()
+		}
+
 </script>
 </body>
 </html>
